@@ -1,9 +1,10 @@
 /*font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;*/
 
+/*#f9f7fe;*/
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --secondary-color: red;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -78,6 +79,37 @@ p {
 
 .project-description {
   padding: 120px 60px;
+}
+
+.bottom {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  display: flex;
+  height: 200px;
+  margin-top: 132px;
+  width: 100%;
+}
+
+.r-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom a.btn.btn-branding {
+  margin-left: auto;
+  margin-right: 121px;
+  margin-top: 71px;
+  margin-bottom: auto;
+}
+
+.bottom h2 {
+  padding-left: 119px;
+  padding-top: 49px;
+}
+
+.bottom p {
+  color: #272142;
+  padding-left: 119px;
 }
 
 @media (max-width: 960px) {
