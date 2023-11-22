@@ -112,13 +112,18 @@ p {
   padding: 120px 60px;
 }
 
+.row,
+.row mb-5 {
+  width: 1160px;
+}
+
 .bottom {
   background-color: var(--secondary-color);
   border-radius: 20px;
   display: flex;
   height: 200px;
   margin-top: 132px;
-  width: 100%;
+  width: 1160px;
 }
 
 .r-side {
