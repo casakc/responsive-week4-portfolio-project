@@ -11,17 +11,18 @@ font-family: 'Poppins', sans-serif;*/
 body {
   font-family: var(--default-font-family);
   margin: auto;
-  max-width: 1440px;
+  width: 1440px;
   width: 100%;
 }
 
-.nav-bar {
-  height: 42px;
-  margin-left: 165px;
-  margin-right: 139px;
-  margin-top: 40px;
-  padding: 0;
-  width: 1136px;
+.main {
+  margin: 47px 213px 132px 67px;
+}
+
+.navbar {
+  padding-left: 165px !important;
+  padding-right: 139px !important;
+  padding-top: 40px !important;
 }
 
 .nb-brand {
@@ -73,7 +74,8 @@ p {
 
 .hero {
   background-color: var(--secondary-color);
-  padding: 160px 20px;
+  padding-bottom: 271px;
+  padding-top: 194px;
   text-align: center;
   width: 100%;
 }
@@ -114,18 +116,11 @@ p {
   padding: 120px 60px;
 }
 
-.row,
-.row mb-5 {
-  width: 1160px;
-}
-
-.bottom {
+.work-inquiry {
   background-color: var(--secondary-color);
-  border-radius: 20px;
   display: flex;
-  height: 200px;
-  margin-top: 132px;
-  width: 1160px;
+  justify-content: center;
+  margin: 132px 213px 81px 67px;
 }
 
 .r-side {
@@ -155,8 +150,7 @@ p {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 81px auto 133px;
-  width: 100%;
+  margin: 81px 655px 133px 507px;
 }
 
 #e-mail {
@@ -165,7 +159,7 @@ p {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-  margin: 0 auto 41px;
+  padding: 0 auto 41px;
 }
 
 .social-media {
@@ -207,36 +201,33 @@ p {
   }
 
   h1 {
-    display: block;
     font-size: 44px;
     line-height: 2;
     margin: auto;
+    text-align: center;
   }
 
   h2 {
-    display: block;
     font-size: 44px;
     margin: auto;
+    text-align: center;
   }
 
-  .project-description,
-  .row bottom {
+  .main,
+  .work-inquiry {
     align-items: center;
     display: flex;
     flex-direction: column;
     font-size: 14px;
+    margin: 132px auto 81px;
     text-align: center;
+  }
+
+  .footer {
+    margin: auto;
   }
 
   .project-description {
     padding: 0;
-  }
-
-  .row bottom {
-    width: auto;
-  }
-
-  .footer {
-    width: 100%;
   }
 }
