@@ -233,7 +233,7 @@ p {
   }
 
   .row bottom {
-    width: 100%;
+    width: auto;
   }
 
   .footer {
