@@ -32,7 +32,7 @@ body {
 }
 
 .ul-nav {
-  width: 341px;
+  width: 400px;
 }
 
 a.nav-link {
@@ -124,7 +124,8 @@ p {
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
-  margin: 132px 213px 81px 67px;
+  margin: 47px 213px 132px 67px;
+  padding: 0 20px;
 }
 
 .r-side {
