@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Patrícia is a Front-End engineer based in Portugal."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,23 +35,26 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
 
-    <title>Document</title>
+    <title>Front-End Developer - Patrícia Pereira</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/">
-          <img src="/images/logo.png" class="logo d-none d-md-block" alt="" />
+        <a href="/" title="Homepage">
+          <img
+            src="/images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Patrícia Logo" />
           <img
             src="/images/smaller-logo.png"
             class="logo d-block d-md-none"
-            alt=""
+            alt="Patrícia Logo"
         /></a>
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li class="active"><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about.html" title="About Patrícia">About</a></li>
+          <li><a href="/work.html" title="Patrícia's Work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Patrícia">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -57,7 +64,11 @@
 
       <h1>Patrícia Pereira</h1>
       <h2 class="mb-5">Front-End developer based in Portugal</h2>
-      <div><a href="#" class="btn btn-branding">Get Started</a></div>
+      <div>
+        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+          >Get Started</a
+        >
+      </div>
     </div>
     <div class="main">
       <p class="text-center m-5">
@@ -66,7 +77,11 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col d-none d-lg-block">
-            <img src="images/yoghurt.png" class="img-fluid" alt="" />
+            <img
+              src="images/yoghurt.png"
+              class="img-fluid"
+              alt="Yogurt Project Preview"
+            />
           </div>
 
           <div class="col">
@@ -79,7 +94,9 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="" class="btn btn-branding-outline">Learn more</a>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
@@ -97,12 +114,18 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="" class="btn btn-branding-outline">Learn more</a>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
             </div>
           </div>
 
           <div class="col d-none d-lg-block">
-            <img src="images/weather.png" class="img-fluid" alt="" />
+            <img
+              src="images/weather.png"
+              class="img-fluid"
+              alt="Weather App Preview"
+            />
           </div>
         </div>
       </div>
@@ -110,7 +133,11 @@
       <div class="container">
         <div class="row">
           <div class="col d-none d-lg-block">
-            <img src="images/dictionary.png" class="img-fluid" alt="" />
+            <img
+              src="images/dictionary.png"
+              class="img-fluid"
+              alt="Dictionary App Preview"
+            />
           </div>
 
           <div class="col">
@@ -123,7 +150,9 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="" class="btn btn-branding-outline">Learn more</a>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
@@ -132,30 +161,55 @@
           class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex"
         >
           <div>
-            <h4>Work Inquiry</h4>
+            <h3>Work Inquiry</h3>
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="" class="btn btn-branding mt-3">Contact me</a>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Patrícia"
+              >Contact me</a
+            >
           </div>
         </div>
 
         <div class="foot d-flex justify-content-center">
-          <a href="mailto:patricia@gmail.com" class="email-link"
+          <a
+            href="mailto:patricia@gmail.com"
+            class="email-link"
+            title="e-Mail Patrícia"
             >patricia@gmail.com</a
           >
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href="https://www.instagram.com/patricia-too" target="_blank"
+          <a
+            href="https://www.instagram.com/patricia-too"
+            target="_blank"
+            title="Instagram Profile"
             ><i class="fab fa-instagram" id="instagram"></i
           ></a>
-          <a href="https://www.github.com/patricia-too" target="_blank"
+          <a
+            href="https://www.github.com/patricia-too"
+            target="_blank"
+            title="GitHub Profile"
             ><i class="fab fa-github" id="github"></i
           ></a>
-          <a href="https://www.facebook.com/patricia-too" target="_blank"
+          <a
+            href="https://www.facebook.com/patricia-too"
+            target="_blank"
+            title="Facebook Profile"
             ><i class="fab fa-facebook-f" id="facebook"></i
           ></a>
         </div>
+        <p class="text-center mt-5">
+          👩‍🎓This project was coded by SheCodes and it is
+          <a
+            href="https://github.com/casakc/responsive-week4-portfolio-project"
+            target="_blank"
+            >open-sourced</a
+          >
+        </p>
       </div>
     </div>
   </body>
