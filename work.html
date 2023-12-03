@@ -38,48 +38,73 @@
     <title>Patrícia Pereira's Work | Front-End Development</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="images/logo.png" class="img-fluid" alt="shecodes-logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="nav ul-nav">
-            <li class="nav-item">
-              <a class="nav-link active nl-active" aria-current="page" href="/"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <div class="about-navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img
+                src="images/logo.png"
+                class="img-fluid"
+                alt="shecodes-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="nav ul-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/"
+                    title="Homepage"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html" title="About Patrtícia"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active nl-active"
+                    href="/work.html"
+                    title="Patrtícia's Work"
+                    >Work</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/contact.html"
+                    title="Patrícia's Contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
+
     <div class="content-container container">
       <div class="content">
-        <h1 class="mb-5">Take a look at what I've been working on!</h1>
+        <h1>Take a look at what I've been working on!</h1>
 
         <div class="row">
           <div class="col-md-6 mb-4">
@@ -126,7 +151,7 @@
       </div>
 
       <div
-        class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex"
+        class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex container"
       >
         <div>
           <h3>Work Inquiry</h3>
@@ -136,7 +161,7 @@
           <a
             href="/contact.html"
             class="btn btn-branding mt-3"
-            title="Contact Patrícia"
+            title="Link to Patrícia's Contact"
             >Contact me</a
           >
         </div>
@@ -148,15 +173,38 @@
 
       <div class="social-media">
         <div class="btn btn-branding-social-m">
-          <i class="fab fa-facebook-f" id="facebook"></i>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            title="Link to Patrícia's Facebook account"
+            ><i class="fab fa-facebook-f" id="facebook"></i
+          ></a>
         </div>
         <div class="btn btn-branding-social-m">
-          <i class="fab fa-twitter" id="twitter"></i>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            title="Link to Patrícia's Twitter account"
+            ><i class="fab fa-twitter" id="twitter"></i
+          ></a>
         </div>
         <div class="btn btn-branding-social-m">
-          <i class="fab fa-instagram" id="instagram"></i>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            title="Link to Patrícia's Instagram account"
+            ><i class="fab fa-instagram" id="instagram"></i
+          ></a>
         </div>
       </div>
     </div>
+    <p class="text-center mb-5">
+      👩‍🎓This project was coded by SheCodes and it is
+      <a
+        href="https://github.com/casakc/responsive-week4-portfolio-project"
+        target="_blank"
+        >open-sourced</a
+      >
+    </p>
   </body>
 </html>

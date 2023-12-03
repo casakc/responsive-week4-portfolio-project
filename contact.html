@@ -38,39 +38,81 @@
 
     <title>Contact Patrícia</title>
   </head>
-  <nav class="d-flex justify-content-between">
-    <a href="/" title="Homepage">
-      <img
-        src="/images/logo.png"
-        class="logo d-none d-md-block"
-        alt="Patrícia Logo" />
-      <img
-        src="/images/smaller-logo.png"
-        class="logo d-block d-md-none"
-        alt="Patrícia Logo"
-    /></a>
-    <ul>
-      <li><a href="/" title="Homepage">Home</a></li>
-      <li>
-        <a href="/about.html" title="About Patrícia">About</a>
-      </li>
-      <li><a href="/work.html" title="Patrícia's Work">Work</a></li>
-      <li class="active">
-        <a href="/contact.html" title="Contact Patrícia">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="about-navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="images/logo.png" class="img-fluid" alt="shecodes-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="nav ul-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/"
+                  title="Homepage"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html" title="About Patrtícia"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/work.html" title="Patrtícia's Work"
+                  >Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active nl-active"
+                  href="/contact.html"
+                  title="Patrícia's Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
   <body>
     <div class="content-container container">
       <div class="content">
         <div class="contact">
           <h1 class="mb-5">Let's get in touch!</h1>
           <h3>e-Mail</h3>
-          <p><a href="mailto:patricia@gmail.com">patricia@gmail.com</a></p>
+          <p>
+            <a href="mailto:patricia@gmail.com" title="Patrícia's e-mail"
+              >patricia@gmail.com</a
+            >
+          </p>
           <h3>Twitter</h3>
 
           <p>
-            <a href="https://www.twitter.com/patricia" target="_blank"
+            <a
+              href="https://www.twitter.com/patricia"
+              target="_blank"
+              title="Patrícia's Twitter account"
               >@patricia</a
             >
           </p>
@@ -78,12 +120,69 @@
           <h3>Instagram</h3>
 
           <p>
-            <a href="https://www.instagram.com/patricia.codes" target="_blank"
+            <a
+              href="https://www.instagram.com/patricia.codes"
+              target="_blank"
+              title="Patrícia's Instagram account"
               >@patricia.codes-too</a
             >
           </p>
         </div>
       </div>
     </div>
+    <div
+      class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex container"
+    >
+      <div>
+        <h3>Work Inquiry</h3>
+        <p class="text-muted">Let's work together</p>
+      </div>
+      <div>
+        <a
+          href="/contact.html"
+          class="btn btn-branding mt-3"
+          title="Link to Patrícia's Contact"
+          >Contact me</a
+        >
+      </div>
+    </div>
+    <div class="footer text-center">
+      <p id="e-mail">youremail@gmail.com</p>
+
+      <div class="social-media">
+        <div class="btn btn-branding-social-m">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            title="Link to Patrícia's Facebook account"
+            ><i class="fab fa-facebook-f" id="facebook"></i
+          ></a>
+        </div>
+        <div class="btn btn-branding-social-m">
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            title="Link to Patrícia's Twitter account"
+            ><i class="fab fa-twitter" id="twitter"></i
+          ></a>
+        </div>
+        <div class="btn btn-branding-social-m">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            title="Link to Patrícia's Instagram account"
+            ><i class="fab fa-instagram" id="instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mb-5">
+      👩‍🎓This project was coded by SheCodes and it is
+      <a
+        href="https://github.com/casakc/responsive-week4-portfolio-project"
+        target="_blank"
+        >open-sourced</a
+      >
+    </p>
   </body>
 </html>

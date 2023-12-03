@@ -37,39 +37,80 @@
 
     <title>Front-End Developer - Patrícia Pereira</title>
   </head>
-  <body>
-    <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/" title="Homepage">
-          <img
-            src="/images/logo.png"
-            class="logo d-none d-md-block"
-            alt="Patrícia Logo" />
-          <img
-            src="/images/smaller-logo.png"
-            class="logo d-block d-md-none"
-            alt="Patrícia Logo"
-        /></a>
-        <ul>
-          <li class="active"><a href="/" title="Homepage">Home</a></li>
-          <li><a href="/about.html" title="About Patrícia">About</a></li>
-          <li><a href="/work.html" title="Patrícia's Work">Work</a></li>
-          <li><a href="/contact.html" title="Contact Patrícia">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
+  <body class="index-body">
     <div class="hero">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img
+                src="images/logo.png"
+                class="img-fluid"
+                alt="shecodes-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="nav ul-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active nl-active"
+                    aria-current="page"
+                    href="/"
+                    title="Homepage"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html" title="About Patrtícia"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/work.html" title="Patrtícia's Work"
+                    >Work</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/contact.html"
+                    title="Patrícia's Contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
       <p>👋 Hello, I am</p>
 
       <h1>Patrícia Pereira</h1>
       <h2 class="mb-5">Front-End developer based in Portugal</h2>
       <div>
-        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+        <a
+          href="/contact.html"
+          class="btn btn-branding"
+          title="Link to Patrícia's Contact"
           >Get Started</a
         >
       </div>
     </div>
+
     <div class="main">
       <p class="text-center m-5">
         Featured Project with my best projects to show
@@ -94,7 +135,10 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="/work.html" class="btn btn-branding-outline"
+              <a
+                href="/work.html"
+                class="btn btn-branding-outline"
+                title="Link to Patrícia's Work"
                 >Learn more</a
               >
             </div>
@@ -114,7 +158,10 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="/work.html" class="btn btn-branding-outline"
+              <a
+                href="/work.html"
+                class="btn btn-branding-outline"
+                title="Link to Patrícia's Work"
                 >Learn more</a
               >
             </div>
@@ -150,67 +197,72 @@
                 Semantics, a large language ocean. A small river named Duden
                 flows by
               </p>
-              <a href="/work.html" class="btn btn-branding-outline"
+              <a
+                href="/work.html"
+                class="btn btn-branding-outline"
+                title="Link to Patrícia's Work"
                 >Learn more</a
               >
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div
-          class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex"
+    <div
+      class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex container"
+    >
+      <div>
+        <h3>Work Inquiry</h3>
+        <p class="text-muted">Let's work together</p>
+      </div>
+      <div>
+        <a
+          href="/contact.html"
+          class="btn btn-branding mt-3"
+          title="Link to Patrícia's Contact"
+          >Contact me</a
         >
-          <div>
-            <h3>Work Inquiry</h3>
-            <p class="text-muted">Let's work together</p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn btn-branding mt-3"
-              title="Contact Patrícia"
-              >Contact me</a
-            >
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="footer text-center">
+      <p id="e-mail">youremail@gmail.com</p>
 
-        <div class="foot d-flex justify-content-center">
+      <div class="social-media">
+        <div class="btn btn-branding-social-m">
           <a
-            href="mailto:patricia@gmail.com"
-            class="email-link"
-            title="e-Mail Patrícia"
-            >patricia@gmail.com</a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://www.instagram.com/patricia-too"
+            href="https://www.facebook.com"
             target="_blank"
-            title="Instagram Profile"
-            ><i class="fab fa-instagram" id="instagram"></i
-          ></a>
-          <a
-            href="https://www.github.com/patricia-too"
-            target="_blank"
-            title="GitHub Profile"
-            ><i class="fab fa-github" id="github"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/patricia-too"
-            target="_blank"
-            title="Facebook Profile"
+            title="Link to Patrícia's Facebook account"
             ><i class="fab fa-facebook-f" id="facebook"></i
           ></a>
         </div>
-        <p class="text-center mt-5">
-          👩‍🎓This project was coded by SheCodes and it is
+        <div class="btn btn-branding-social-m">
           <a
-            href="https://github.com/casakc/responsive-week4-portfolio-project"
+            href="https://www.twitter.com"
             target="_blank"
-            >open-sourced</a
-          >
-        </p>
+            title="Link to Patrícia's Twitter account"
+            ><i class="fab fa-twitter" id="twitter"></i
+          ></a>
+        </div>
+        <div class="btn btn-branding-social-m">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            title="Link to Patrícia's Instagram account"
+            ><i class="fab fa-instagram" id="instagram"></i
+          ></a>
+        </div>
       </div>
     </div>
+
+    <p class="text-center mb-5">
+      👩‍🎓This project was coded by SheCodes and it is
+      <a
+        href="https://github.com/casakc/responsive-week4-portfolio-project"
+        target="_blank"
+        >open-sourced</a
+      >
+    </p>
   </body>
 </html>

@@ -16,13 +16,30 @@ body {
 }
 
 .main {
-  margin: 47px 213px 132px 67px;
+  margin: 47px auto 132px auto;
+}
+
+.about {
+  margin-bottom: 178px;
+  padding-top: 40px;
+}
+
+.about-navbar {
+  padding-top: 40px;
+}
+
+.about-navbar .navbar {
+  background-color: white !important;
+}
+
+.main-about {
+  margin: 47px auto 204px auto;
 }
 
 .navbar {
-  padding-left: 165px !important;
-  padding-right: 139px !important;
-  padding-top: 40px !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 195px;
 }
 
 .nb-brand {
@@ -78,8 +95,10 @@ p {
 
 .hero {
   background-color: var(--secondary-color);
-  padding-bottom: 271px;
-  padding-top: 194px;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-bottom: 231px;
+  padding-top: 40px;
   text-align: center;
   width: 100%;
 }
@@ -120,14 +139,6 @@ p {
   padding: 120px 60px;
 }
 
-.work-inquiry {
-  background-color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  margin: 47px auto 132px auto;
-  padding: 0 20px;
-}
-
 .r-side {
   display: flex;
   justify-content: flex-end;
@@ -155,7 +166,7 @@ p {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 81px 655px 133px 507px;
+  margin: 81px auto 78px auto;
 }
 
 #e-mail {
@@ -169,16 +180,16 @@ p {
 
 .social-media {
   display: flex;
+  height: 40px;
   justify-content: space-between;
   width: 186px;
-  height: 40px;
 }
 
 .btn-branding-social-m {
   align-items: center;
-  background-color: rgba(108, 99, 255, 0.05);
+  background-color: var(--branding-color);
   border-radius: 50%;
-  color: white;
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   height: 40px;
@@ -188,11 +199,19 @@ p {
 #facebook,
 #twitter,
 #instagram {
-  color: #6c63ff;
+  background-color: var(--branding-color);
+  color: var(--secondary-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+}
+
+#facebook a:hover,
+#twitter a:hover,
+#instagram a:hover {
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
 }
 
 #twitter {
@@ -201,7 +220,7 @@ p {
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 0 20px;
 }
 
 .content {
@@ -217,6 +236,7 @@ p {
 .content h1 {
   font-size: 64px;
   line-height: 85px;
+  margin-bottom: 103px;
 }
 
 .content h2 {
@@ -268,9 +288,15 @@ nav li.active a {
 }
 
 .contact-box {
+  align-items: center;
   background-color: var(--secondary-color);
+  border: 0 12px;
   border-radius: 10px;
-  padding: 30px 120px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin: 47px auto 78px auto;
+  padding: 0 132px;
 }
 
 .contact-box p {
@@ -309,7 +335,8 @@ nav li.active a {
 
 @media (max-width: 960px) {
   .hero {
-    padding: 8px 20px;
+    margin: auto;
+    padding: 40px 20px 8px 20px;
   }
 
   h1 {
@@ -331,16 +358,20 @@ nav li.active a {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    margin: 132px auto 81px;
+    margin: 78px auto 78px;
     text-align: center;
-  }
-
-  .footer {
-    margin: auto;
   }
 
   .project-description {
     padding: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .about {
+    margin-bottom: 80px;
   }
 
   .about-section {
@@ -348,7 +379,69 @@ nav li.active a {
     text-align: center;
   }
 
+  .main-about {
+    margin: 30px auto;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .content-container {
+    padding: 0px;
+  }
+
   nav a {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ul-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+  }
+
+  .index-body {
+    h1 {
+      font-size: 64px;
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .navbar {
+    margin-bottom: 30px;
+  }
+
+  .hero {
+    margin: auto;
+    padding: 40px 20px 8px 20px;
+  }
+
+  .main {
+    margin-top: 39px;
+  }
+
+  .main p {
+    text-align: justify;
+  }
+
+  .main-about p {
+    text-align: justify;
   }
 }
